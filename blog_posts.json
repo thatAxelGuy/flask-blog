@@ -10,5 +10,11 @@
         "author": "Jane Doe",
         "title": "Second Post",
         "content": "This is another post."
+    },
+    {
+        "id": 3,
+        "author": "Mysterio",
+        "title": "The Illusion of Reality",
+        "content": "Reality is only as convincing as the story we tell ourselves. A shadow in the corner, a distant sound, a face where there should be none \u2014 sometimes the mind fills in the gaps before we even realize they're there. The trick isn't making someone see something that isn't real. The real trick is making them question what they thought was real in the first place."
     }
 ]
