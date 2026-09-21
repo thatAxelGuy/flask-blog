@@ -1,6 +1,6 @@
 import json
 
-from flask import Flask, redirect, render_template, request
+from flask import Flask, redirect, render_template, request, url_for
 
 BLOG_POSTS = "blog_posts.json"
 
@@ -52,7 +52,7 @@ def add():
 
         save_posts(blog_posts)
 
-        return redirect('/')
+        return redirect(url_for('index'))
     # If the request is GET, show the add post form
     return render_template('add.html')
 

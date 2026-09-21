@@ -63,3 +63,28 @@ h1 {
     color: #FFF;
     cursor: pointer;
 }
+
+.add-button {
+    display: inline-block;
+    background-color: #4F4F4F;
+    color: #FFF;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background-color: #333;
+}
+
+.back-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #4F4F4F;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}

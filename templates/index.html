@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Welcome to My Flask Blog!</h1>
+    <a class="add-button" href="{{ url_for('add') }}">Add a New Post</a>
     {% for post in posts %}
     <div class="post">
         <h2>{{post.title}}</h2>
