@@ -6,12 +6,6 @@
         "content": "This is my first post."
     },
     {
-        "id": 2,
-        "author": "Jane Doe",
-        "title": "Second Post",
-        "content": "This is another post."
-    },
-    {
         "id": 3,
         "author": "Mysterio",
         "title": "The Illusion of Reality",
