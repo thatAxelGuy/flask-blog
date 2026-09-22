@@ -104,3 +104,16 @@ h1 {
 .delete-button:hover{
     background-color: #ff0000;
 }
+
+.like-button {
+    display: inline-block;
+    padding: 5px 8px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.like-button:hover {
+    background-color: #F5F5F5;
+}

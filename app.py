@@ -97,6 +97,22 @@ def update(post_id):
         return redirect(url_for('index'))
     return render_template('update.html', post=post)
 
+@app.route('/like/<int:post_id>', methods=['GET', 'POST'])
+def like_post(post_id):
+    blog_posts, post = fetch_post_by_id(post_id)
+
+    if post is None:
+        return "Post not found", 404
+
+    post['likes'] += 1
+
+    save_posts(blog_posts)
+    return redirect(url_for('index'))
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
+
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)

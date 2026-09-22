@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Welcome to My Flask Blog!</h1>
+    <h1>Welcome to My Flask Blog! 🍕</h1>
     <a class="add-button" href="{{ url_for('add') }}">Add a New Post</a>
     {% for post in posts %}
     <div class="post">
@@ -20,6 +20,10 @@
         <a class="delete-button" href="{{ url_for('delete' , post_id=post.id) }}">
             Delete post
         </a>
+        <a class="like-button" href="{{url_for('like_post', post_id=post.id)}}">
+            ❤️
+        </a>
+        <span>{{post.likes}}</span>
     </div>
     {% endfor %}
 </body>
