@@ -4,7 +4,7 @@ from flask import Flask, redirect, render_template, request, url_for
 
 BLOG_POSTS = "blog_posts.json"
 
-def load_posts():
+def load_posts() -> list[dict]:
     try:
         with open(BLOG_POSTS, "r") as file:
             blog_posts = json.load(file)
@@ -17,9 +17,20 @@ def load_posts():
     return blog_posts
 
 
-def save_posts(blog_posts):
+def save_posts(blog_posts) -> None:
     with open(BLOG_POSTS, "w") as file:
         json.dump(blog_posts, file, indent=4)
+
+
+def fetch_post_by_id(post_id) -> tuple[list[dict], dict | None]:
+    blog_posts = load_posts()
+     
+    for post in blog_posts:
+        if post['id'] == post_id:
+            return blog_posts, post
+
+    return blog_posts, None
+
 
 
 app = Flask(__name__)
@@ -71,22 +82,20 @@ def delete(post_id):
 
 @app.route('/update/<int:post_id>', methods=['GET', 'POST'])
 def update(post_id):
-    blog_posts = load_posts()
+    blog_posts, post = fetch_post_by_id(post_id)
 
-    for post in blog_posts:
-        if post['id'] == post_id:
-            if request.method == 'POST':
-                post['author'] = request.form['author']
-                post['title'] = request.form['title']
-                post['content'] = request.form['content']
+    if post is None:
+        return "Post not found", 404
+    
+    if request.method == 'POST':
+        post['author'] = request.form['author']
+        post['title'] = request.form['title']
+        post['content'] = request.form['content']
 
-                save_posts(blog_posts)
+        save_posts(blog_posts)
 
-                return redirect(url_for('index'))
-
-            return render_template('update.html', post=post)
-
-    return redirect(url_for('index'))
+        return redirect(url_for('index'))
+    return render_template('update.html', post=post)
 
 
 if __name__ == '__main__':
