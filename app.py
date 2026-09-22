@@ -5,6 +5,7 @@ from flask import Flask, redirect, render_template, request, url_for
 BLOG_POSTS = "blog_posts.json"
 
 def load_posts() -> list[dict]:
+    """Load blog posts from the JSON file."""
     try:
         with open(BLOG_POSTS, "r") as file:
             blog_posts = json.load(file)
@@ -18,11 +19,13 @@ def load_posts() -> list[dict]:
 
 
 def save_posts(blog_posts) -> None:
+    """Save blog posts to the JSON file."""
     with open(BLOG_POSTS, "w") as file:
         json.dump(blog_posts, file, indent=4)
 
 
 def fetch_post_by_id(post_id) -> tuple[list[dict], dict | None]:
+    """Find a blog post by its ID and return the posts list and matching post."""
     blog_posts = load_posts()
      
     for post in blog_posts:
