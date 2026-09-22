@@ -69,6 +69,24 @@ def delete(post_id):
 
     return redirect(url_for('index'))
 
+@app.route('/update/<int:post_id>', methods=['GET', 'POST'])
+def update(post_id):
+    blog_posts = load_posts()
+
+    for post in blog_posts:
+        if post['id'] == post_id:
+            if request.method == 'POST':
+                post['author'] = request.form['author']
+                post['title'] = request.form['title']
+                post['content'] = request.form['content']
+
+                save_posts(blog_posts)
+
+                return redirect(url_for('index'))
+
+            return render_template('update.html', post=post)
+
+    return redirect(url_for('index'))
 
 
 if __name__ == '__main__':

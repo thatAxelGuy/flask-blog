@@ -1,20 +1,50 @@
 [
     {
         "id": 1,
-        "author": "John Doe",
-        "title": "First Post",
-        "content": "This is my first post."
+        "author": "Mysterio",
+        "title": "The Definitive Pizza Ranking",
+        "content": "I have seen the future, and it contains the greatest pizza ever created. Perfect crust, perfect cheese, perfect toppings. Spider-Man claims his favorite is better, but I have created an illusion where he admits I am correct. The illusion is extremely convincing."
+    },
+    {
+        "id": 2,
+        "author": "Spider-Man",
+        "title": "Okay, Mysterio Is Wrong About Pizza",
+        "content": "For the record, I never admitted Mysterio was right about anything. Especially pizza. You cannot just make a giant holographic pizza and call it the best pizza in New York. Also, pineapple belongs on pizza. There, I said it."
     },
     {
         "id": 3,
-        "author": "Mysterio",
-        "title": "The Illusion of Reality",
-        "content": "Reality is only as convincing as the story we tell ourselves. A shadow in the corner, a distant sound, a face where there should be none \u2014 sometimes the mind fills in the gaps before we even realize they're there. The trick isn't making someone see something that isn't real. The real trick is making them question what they thought was real in the first place."
+        "author": "Iron Man",
+        "title": "Mysterio Has a Point",
+        "content": "I hate to say it, kid, but Mysterio's pizza argument has some merit. The man showed up with a twenty-foot holographic pizza and somehow made it look delicious. Meanwhile, Peter once burned a frozen pizza. I have security footage."
     },
     {
         "id": 4,
+        "author": "Captain America",
+        "title": "We Need to Settle This Properly",
+        "content": "I think we should settle this the traditional way: everyone gets a slice and we vote. Mysterio has already prepared twelve pizzas, three of which are apparently illusions. I'm not sure which ones are real, but honestly they all smell pretty good."
+    },
+    {
+        "id": 5,
+        "author": "Thor",
+        "title": "Mysterio's Pizza Is Worthy",
+        "content": "I have eaten pizza in many realms, and Mysterio's pizza is powerful indeed. The cheese stretches farther than the Bifrost. Spider-Man's pizza was acceptable, although he became strangely upset when I called his crust 'mortal.'"
+    },
+    {
+        "id": 6,
+        "author": "Black Widow",
+        "title": "Peter Is Taking This Too Seriously",
+        "content": "I've watched Spider-Man fight supervillains with less arguing than he's doing over pizza. Mysterio has a point. His pizza is good. We should probably stop encouraging this before someone brings up New York versus Chicago style."
+    },
+    {
+        "id": 7,
+        "author": "Hulk",
+        "title": "Hulk Likes Mysterio Pizza",
+        "content": "HULK LIKE GREEN PIZZA. MYSTERIO MAKE PIZZA LOOK BIG. SPIDER-MAN SAY PIZZA TOO BIG. HULK SAY SPIDER-MAN WRONG. HULK ALSO EAT SPIDER-MAN'S PIZZA. HULK SORRY."
+    },
+    {
+        "id": 8,
         "author": "Spider-Man",
-        "title": "Seeing Through the Illusion",
-        "content": "Mysterio wants everyone to believe that reality is whatever he says it is. But when you spend enough time swinging between skyscrapers, you learn to trust what you can actually see, hear, and experience. The real world isn't always easy, but pretending something is true doesn't make it true. Nice try, Mysterio. Next time, maybe skip the smoke and mirrors."
+        "title": "This Is Getting Ridiculous",
+        "content": "Okay, everyone has officially lost the plot. Thor thinks pizza can be worthy, Hulk ate my entire slice, and Tony is using security footage to win an argument about food. Mysterio, congratulations. You somehow turned a pizza debate into a superhero civil war."
     }
 ]
