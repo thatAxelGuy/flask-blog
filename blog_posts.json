@@ -11,7 +11,7 @@
         "author": "Spider-Man",
         "title": "Okay, Mysterio Is Wrong About Pizza",
         "content": "For the record, I never admitted Mysterio was right about anything. Especially pizza. You cannot just make a giant holographic pizza and call it the best pizza in New York. Also, pineapple belongs on pizza. There, I said it.",
-        "likes": 1
+        "likes": 2
     },
     {
         "id": 3,
@@ -53,6 +53,13 @@
         "author": "Spider-Man",
         "title": "This Is Getting Ridiculous",
         "content": "Okay, everyone has officially lost the plot. Thor thinks pizza can be worthy, Hulk ate my entire slice, and Tony is using security footage to win an argument about food. Mysterio, congratulations. You somehow turned a pizza debate into a superhero civil war.",
-        "likes": 2
+        "likes": 3
+    },
+    {
+        "id": 9,
+        "author": "Peter",
+        "title": "I'm Peter",
+        "content": "I'm Peter",
+        "likes": 1
     }
 ]

@@ -1,0 +1,9 @@
+[project]
+name = "flask-blog"
+version = "0.1.0"
+description = "A simple Flask blog application for creating, updating, deleting, and liking blog posts"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=3.1.3",
+]
